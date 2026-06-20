@@ -1,0 +1,41 @@
+name: Build and Deploy to Azure
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to Azure
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Install Azure Container Apps extension
+        run: az extension add --name containerapp --upgrade
+
+      - name: Log in to Azure Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: preesumashresthaacr.azurecr.io
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Build and push Docker image
+        run: |
+          docker build -t preesumashresthaacr.azurecr.io/preesumashrestha-portfolio:latest \
+                       -t preesumashresthaacr.azurecr.io/preesumashrestha-portfolio:${{ github.sha }} .
+          docker push preesumashresthaacr.azurecr.io/preesumashrestha-portfolio:latest
+          docker push preesumashresthaacr.azurecr.io/preesumashrestha-portfolio:${{ github.sha }}
+
+      - name: Deploy to Azure Container Apps
+        run: |
+          az containerapp update \
+            --name preesuma-portfolio-app \
+            --resource-group portofolio \
+            --image preesumashresthaacr.azurecr.io/sanamsitoula-portfolio:${{ github.sha }}
