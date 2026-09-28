@@ -1,8 +1,10 @@
 name: Build and Deploy to Azure
+
 on:
   push:
     branches:
       - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -38,4 +40,4 @@ jobs:
           az containerapp update \
             --name preesuma-portfolio-app \
             --resource-group portofolio \
-            --image preesumashresthaacr.azurecr.io/sanamsitoula-portfolio:${{ github.sha }}
+            --image preesumashresthaacr.azurecr.io/preesumashrestha-portfolio:${{ github.sha }}
