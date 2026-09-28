@@ -1,175 +1,1016 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preesuma Shrestha | Portfolio</title>
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio of Preesuma Shrestha — Backend Developer and Python & Django Developer."
+    >
+
+    <meta
+        name="author"
+        content="Preesuma Shrestha"
+    >
+
+    <title>Preesuma Shrestha | Backend Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 </head>
 
-<body class="bg-gray-950 text-white">
 
-<!-- NAV -->
-<nav class="flex justify-between items-center px-10 py-6 bg-gray-900 shadow-lg">
-    <h1 class="text-2xl font-bold text-cyan-400">Preesuma Shrestha | Portfolio</h1>
+<body>
 
-    <div class="space-x-6 text-lg">
-        <a href="#about" class="hover:text-cyan-400">About</a>
-        <a href="#skills" class="hover:text-cyan-400">Skills</a>
-        <a href="#contact" class="hover:text-cyan-400">Contact</a>
-    </div>
-</nav>
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
 
-<!-- HERO -->
-<section class="min-h-screen flex items-center justify-center px-6 text-center">
-    <div class="max-w-3xl">
+    <header class="navbar">
 
-        <h2 class="text-5xl font-bold mb-4">
-            Hi, I'm
-            <span class="text-cyan-400">Preesuma Shrestha</span>
-        </h2>
+        <div class="container nav-container">
 
-        <p class="text-gray-300 text-lg leading-relaxed mb-8">
-            Passionate developer focused on building modern,
-            user-friendly, and responsive web applications.
-            Interested in Django, Python, frontend design,
-            and creating clean digital experiences.
-        </p>
+            <a href="#home" class="logo">
+                Preesuma<span>.</span>
+            </a>
 
-        <a href="#contact"
-        class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-xl text-white font-medium">
-            Connect With Me
-        </a>
+            <nav id="nav-links" class="nav-links">
 
-    </div>
-</section>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
 
-<!-- ABOUT -->
-<section id="about" class="py-20 px-10 bg-gray-900">
-    <div class="max-w-5xl mx-auto">
-        <h2 class="text-4xl font-bold mb-8 text-cyan-400">About Me</h2>
-        <p class="text-gray-300 text-lg leading-8">
-            I enjoy developing modern applications and exploring new ideas.
-            My interests include designing intuitive interfaces and creating smooth,
-            engaging user experiences. I’m passionate about learning and adapting
-            to emerging trends in technology.
-        </p>
-    </div>
-</section>
+            </nav>
 
-<!-- SKILLS -->
-<section id="skills" class="py-20 px-10">
-    <div class="max-w-5xl mx-auto">
-        <h2 class="text-4xl font-bold mb-10 text-cyan-400">Skills</h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-
-            <div class="bg-gray-900 p-8 rounded-2xl shadow-lg hover:scale-105 duration-300">
-                <i class="fa-solid fa-gears text-5xl text-yellow-400 mb-4"></i>
-                <h3 class="text-2xl font-semibold mb-2">Programming</h3>
-                <p class="text-gray-400">Efficient problem solving and automation.</p>
-            </div>
-
-            <div class="bg-gray-900 p-8 rounded-2xl shadow-lg hover:scale-105 duration-300">
-                <i class="fa-solid fa-layer-group text-5xl text-cyan-400 mb-4"></i>
-                <h3 class="text-2xl font-semibold mb-2">Web Development</h3>
-                <p class="text-gray-400">Secure and scalable applications.</p>
-            </div>
-
-            <div class="bg-gray-900 p-8 rounded-2xl shadow-lg hover:scale-105 duration-300">
-                <i class="fa-solid fa-paintbrush text-5xl text-blue-400 mb-4"></i>
-                <h3 class="text-2xl font-semibold mb-2">UI/UX Design</h3>
-                <p class="text-gray-400">Clean and modern user interfaces.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT / MESSAGE SECTION -->
-<section id="contact" class="py-20 px-10 bg-gray-900">
-    <div class="max-w-3xl mx-auto">
-
-        <h2 class="text-4xl font-bold mb-6 text-cyan-400 text-center">
-            Send Me a Message
-        </h2>
-
-        <p class="text-gray-400 text-center mb-10">
-            Feel free to connect with me. I’ll get back to you soon.
-        </p>
-
-        <form class="space-y-5">
-
-            <input type="text"
-                   placeholder="Your Name"
-                   class="w-full p-3 rounded-lg bg-gray-800 text-white outline-none focus:ring-2 focus:ring-cyan-400">
-
-            <input type="email"
-                   placeholder="Your Email"
-                   class="w-full p-3 rounded-lg bg-gray-800 text-white outline-none focus:ring-2 focus:ring-cyan-400">
-
-            <textarea rows="5"
-                      placeholder="Your Message"
-                      class="w-full p-3 rounded-lg bg-gray-800 text-white outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
-
-            <button type="submit"
-                    class="w-full bg-cyan-500 hover:bg-cyan-600 py-3 rounded-lg font-semibold">
-                Send Message
+            <button
+                id="menu-toggle"
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+            >
+                <i class="fa-solid fa-bars"></i>
             </button>
 
-        </form>
-    </div>
-</section>
+        </div>
 
-<!-- SOCIALS -->
-<section class="py-20 px-10">
-    <div class="text-center">
+    </header>
 
-        <h2 class="text-3xl font-bold mb-8 text-cyan-400">
-            Connect With Me
-        </h2>
 
-        <div class="flex justify-center gap-10 text-4xl">
+    <!-- =========================
+         HANGING LIGHT
+         ========================= -->
 
-            <a href="https://www.facebook.com/loply.queen.96" target="_blank" class="hover:text-blue-500">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
+    <button
+        id="theme-toggle"
+        class="hanging-bulb"
+        aria-label="Toggle dark and light mode"
+        title="Toggle dark/light mode"
+    >
 
-            <a href="https://www.instagram.com/prezzzuma/" target="_blank" class="hover:text-pink-500">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+        <span class="bulb-wire"></span>
 
-            <a href="https://github.com/preesuma1" target="_blank" class="hover:text-gray-400">
-                <i class="fa-brands fa-github"></i>
-            </a>
+        <span class="bulb-holder"></span>
 
-            <a href="https://www.linkedin.com/in/preesuma-shrestha-98a939330/" target="_blank" class="hover:text-cyan-400">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+        <span class="bulb">
+            <i class="fa-solid fa-lightbulb"></i>
+        </span>
+
+    </button>
+
+
+    <!-- =========================
+         MAIN
+         ========================= -->
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section id="home" class="hero">
+
+            <div class="container">
+
+                <div class="hero-content reveal">
+
+                    <div class="hero-label">
+                        Backend Developer
+                    </div>
+
+                    <h1>
+                        Preesuma
+                        <span>Shrestha.</span>
+                    </h1>
+
+                    <h2>
+                        Python & Django Developer
+                    </h2>
+
+                    <p class="hero-description">
+                        I build practical backend systems, REST APIs
+                        and web applications with Python and Django.
+                        I enjoy learning by building, debugging and
+                        turning ideas into working software.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+                            <i class="fa-solid fa-code"></i>
+                            View Projects
+                        </a>
+
+                        <a
+                            href="assets/resume/Preesuma-Shrestha-Resume.pdf"
+                            class="btn btn-coral"
+                            download
+                        >
+                            <i class="fa-solid fa-download"></i>
+                            Download Resume
+                        </a>
+
+                        <a
+                            href="#contact"
+                            class="btn btn-outline"
+                        >
+                            <i class="fa-regular fa-envelope"></i>
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://github.com/preesuma1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/preesuma-shrestha-98a939330/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a
+                            href="#contact"
+                            aria-label="Email"
+                        >
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div class="section-number">
+                        01 — ABOUT
+                    </div>
+
+                    <h2 class="section-title">
+                        A little <span>about me.</span>
+                    </h2>
+
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="profile-wrapper reveal">
+
+                        <img
+                            src="assets/images/profile.jpg"
+                            alt="Preesuma Shrestha"
+                            class="profile-image"
+                        >
+
+                    </div>
+
+                    <div class="about-text reveal">
+
+                        <p>
+                            I am a Computer System Engineering student
+                            interested in backend development and
+                            building useful software applications.
+                        </p>
+
+                        <p>
+                            My main development focus is Python and
+                            Django. Through my projects, I have worked
+                            with databases, Django models, REST APIs,
+                            serializers, authentication, API
+                            documentation and deployment.
+                        </p>
+
+                        <p>
+                            I prefer learning through practical work:
+                            building a feature, testing it, finding
+                            problems and understanding how to improve
+                            it.
+                        </p>
+
+                        <div class="about-highlight">
+
+                            <strong>
+                                Currently focused on:
+                            </strong>
+
+                            <br>
+
+                            Backend development, REST APIs,
+                            Django, PostgreSQL, Docker, cloud
+                            deployment and software testing.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section id="skills">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div class="section-number">
+                        02 — SKILLS
+                    </div>
+
+                    <h2 class="section-title">
+                        Tools I <span>work with.</span>
+                    </h2>
+
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+
+                        <h3>
+                            <i class="fa-solid fa-terminal"></i>
+                            Programming
+                        </h3>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <h3>
+                            <i class="fa-solid fa-server"></i>
+                            Backend
+                        </h3>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Django REST Framework</span>
+                            <span class="skill-tag">REST API</span>
+                            <span class="skill-tag">JWT</span>
+                            <span class="skill-tag">Swagger / OpenAPI</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <h3>
+                            <i class="fa-solid fa-desktop"></i>
+                            Frontend
+                        </h3>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <h3>
+                            <i class="fa-solid fa-database"></i>
+                            Database
+                        </h3>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">SQLite</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <h3>
+                            <i class="fa-solid fa-wrench"></i>
+                            Development Tools
+                        </h3>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">uv</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <h3>
+                            <i class="fa-solid fa-cloud"></i>
+                            Cloud & Testing
+                        </h3>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">Microsoft Azure</span>
+                            <span class="skill-tag">Cloudflare</span>
+                            <span class="skill-tag">API Testing</span>
+                            <span class="skill-tag">Software Testing</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section id="projects">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div class="section-number">
+                        03 — PROJECTS
+                    </div>
+
+                    <h2 class="section-title">
+                        Things I've <span>built.</span>
+                    </h2>
+
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card featured reveal">
+
+                        <div class="project-top">
+
+                            <div class="project-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+
+                            <span class="section-number">
+                                FEATURED
+                            </span>
+
+                        </div>
+
+                        <h3>StayEase</h3>
+
+                        <p>
+                            An Airbnb-style accommodation platform
+                            focused on providing a practical booking
+                            experience. The backend is developed
+                            using Django REST Framework with separate
+                            modules for users, properties, bookings,
+                            payments, reviews and chat.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>DRF</span>
+                            <span>PostgreSQL</span>
+                            <span>JWT</span>
+                            <span>Swagger</span>
+                            <span>Docker</span>
+                            <span>Payment API</span>
+                        </div>
+
+                        <a
+                            href="https://github.com/preesuma1/Stay-Ease"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View on GitHub
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card reveal">
+
+                        <div class="project-top">
+
+                            <div class="project-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+
+                        </div>
+
+                        <h3>Elevate Job Portal</h3>
+
+                        <p>
+                            A job portal project designed around
+                            connecting job seekers and employers
+                            through a structured web application.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Database</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card reveal">
+
+                        <div class="project-top">
+
+                            <div class="project-icon">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+
+                        </div>
+
+                        <h3>Personal Expense Tracker</h3>
+
+                        <p>
+                            A Django-based application for managing
+                            personal expenses with user
+                            authentication, expense records and
+                            REST API functionality.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>DRF</span>
+                            <span>JWT</span>
+                            <span>Swagger</span>
+                            <span>SQLite</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+
+        <section id="experience">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div class="section-number">
+                        04 — EXPERIENCE
+                    </div>
+
+                    <h2 class="section-title">
+                        My <span>experience.</span>
+                    </h2>
+
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-date">
+                            March 2024 — August 2024
+                        </div>
+
+                        <h3>Stock Manager</h3>
+
+                        <h4>
+                            Anita Jewels · Anamnagar
+                        </h4>
+
+                        <p>
+                            Managed customer inquiries and purchases,
+                            coordinated with suppliers, maintained
+                            inventory and stock records, and assisted
+                            with regular stock checking and
+                            organization.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+
+        <section id="education">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div class="section-number">
+                        05 — EDUCATION
+                    </div>
+
+                    <h2 class="section-title">
+                        My <span>education.</span>
+                    </h2>
+
+                </div>
+
+                <div class="education-grid">
+
+                    <article class="education-card reveal">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                        <h3>
+                            Bachelor’s in Computer System Engineering
+                        </h3>
+
+                        <h4>
+                            ISMT College
+                        </h4>
+
+                        <p>
+                            December 2024 — Present
+                        </p>
+
+                    </article>
+
+
+                    <article class="education-card reveal">
+
+                        <i class="fa-solid fa-school"></i>
+
+                        <h3>+2</h3>
+
+                        <h4>
+                            Janapremi World School, Bhaktapur
+                        </h4>
+
+                        <p>
+                            November 2021 — October 2023 · GPA 3.08
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CERTIFICATES -->
+
+        <section id="certificates">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div class="section-number">
+                        06 — CERTIFICATES
+                    </div>
+
+                    <h2 class="section-title">
+                        Learning & <span>certificates.</span>
+                    </h2>
+
+                </div>
+
+                <div class="certificates-grid">
+
+                    <article class="certificate-card reveal">
+
+                        <div class="certificate-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Python and Django Class
+                            </h3>
+
+                            <p>
+                                Successfully completed ·
+                                3 December 2025 — 18 February 2026
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="certificate-card reveal">
+
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                7 Days UI/UX Design Workshop
+                            </h3>
+
+                            <p>
+                                September 9 — 15, 2026
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CURRENTLY EXPLORING -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div class="section-number">
+                        07 — CURRENTLY EXPLORING
+                    </div>
+
+                    <h2 class="section-title">
+                        Always <span>learning.</span>
+                    </h2>
+
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+
+                        <h3>
+                            <i class="fa-solid fa-layer-group"></i>
+                            Backend
+                        </h3>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">Advanced Django</span>
+                            <span class="skill-tag">Django REST Framework</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <h3>
+                            <i class="fa-solid fa-cloud"></i>
+                            DevOps & Cloud
+                        </h3>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Jenkins</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <h3>
+                            <i class="fa-solid fa-bug"></i>
+                            Quality
+                        </h3>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">Software Testing</span>
+                            <span class="skill-tag">API Testing</span>
+                            <span class="skill-tag">QA Practices</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <div class="section-number">
+                        08 — CONTACT
+                    </div>
+
+                    <h2 class="section-title">
+                        Let's <span>connect.</span>
+                    </h2>
+
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-info reveal">
+
+                        <p>
+                            Interested in discussing a project,
+                            internship opportunity, collaboration,
+                            or simply connecting? Feel free to
+                            reach out.
+                        </p>
+
+                        <div class="contact-item">
+
+                            <div class="contact-item-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+
+                            <span>
+                                preesuma1@gmail.com
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-item-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <span>
+                                Naya Thimi, Bhaktapur, Nepal
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-item-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+
+                            <span>
+                                github.com/preesuma1
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-item-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+
+                            <span>
+                                LinkedIn
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        id="contact-form"
+                        class="contact-form reveal"
+                    >
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What would you like to discuss?"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Write your message..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                ©
+                <span id="current-year"></span>
+                Preesuma Shrestha.
+                Built with curiosity, code & coffee.
+            </p>
 
         </div>
-    </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="text-center py-6 bg-black text-gray-500">
-    © 2026 Preesuma Shrestha. All Rights Reserved.
-</footer>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
+
